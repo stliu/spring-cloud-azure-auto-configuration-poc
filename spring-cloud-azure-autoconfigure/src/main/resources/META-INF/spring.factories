@@ -1,0 +1,8 @@
+org.springframework.boot.BootstrapRegistryInitializer=\
+  com.azure.spring.autoconfigure.sdk.credential.AzureCredentialBootstrapRegistryInitializr
+
+org.springframework.context.ApplicationContextInitializer=\
+  com.azure.spring.autoconfigure.sdk.metadata.AzureSDKMetadataContextInitializer
+
+com.azure.spring.autoconfigure.AzureSDKMetadata=\
+  com.azure.spring.autoconfigure.storage.blob.AzureStorageBlobMetadata

@@ -10,6 +10,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
+  <packaging>jar</packaging>
 
   <artifactId>spring-cloud-azure-autoconfigure-poc</artifactId>
   <name>Spring Cloud Azure Autoconfigure Poc</name>

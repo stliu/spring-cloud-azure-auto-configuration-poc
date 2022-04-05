@@ -21,6 +21,7 @@
 
   <modules>
     <module>spring-cloud-azure-autoconfigure</module>
+    <module>sample-app</module>
   </modules>
 
   <dependencyManagement>
@@ -42,10 +43,6 @@
     </dependencies>
   </dependencyManagement>
 	<dependencies>
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-starter-web</artifactId>-->
-<!--		</dependency>-->
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>

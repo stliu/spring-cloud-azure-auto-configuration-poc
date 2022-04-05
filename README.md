@@ -55,7 +55,7 @@ interface AzureSDKMetadata {
 
 ```
 
-Then at some point during spring context initialization, probably `BeanPostProcessor:
+Then at some point during spring context initialization, probably `BeanFactoryPostProcessor` (since auto configuration, by nature, it's a bean factory):
 
 ```java
 
@@ -70,4 +70,12 @@ for(AzureSDKMetadata sdkMetadata: azureSDKMetadataList){
 ```
 
 We can do the same thing for Spring Boot Actuator Health Indicator.
+
+# How to do that?
+
+Since the whole idea of this poc is replacing those static AutoConfiguration classes by programmatically defined metadata, so, the first thing we need to know is how those auto configuration classes are used and when.
+
+We know auto configuration classes are defined in the `META-INF/spring.factories` file, like [this one](https://github.com/Azure/azure-sdk-for-java/blob/5bc550c9a5de4f8ee93a5b3141500ee34be3850d/sdk/spring/spring-cloud-azure-autoconfigure/src/main/resources/META-INF/spring.factories#L6)
+
+
 
